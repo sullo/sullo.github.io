@@ -95,8 +95,7 @@
   <span class="post-date">23 Jun 2021</span>
   <p>When running Nikto, you have the ability to save all findings in plaintext files by using the -Save option. This option takes one argument, a directory name, which will be used or created to save all findings, one per text file.  Each file will be named in the following format: HOSTNAME_PORT_DATE_TESTID.txt</p>
 
-<p>/public/images/blog-nikto-savedir.png
-![savedir](/public/images/blog-nikto-savedir.png{:class=”img-responsive”}</p>
+<p><a href="/public/images/blog-nikto-savedir.png">Savedir feature</a></p>
 
 <p>These save files contain basic test information such as the test ID and message, the full HTTP response, and JSON representations of both the request and response. They also contain a “Reason” for the finding—for example “Response Code Match” (the code from the HTTP response matched the test database) or “Content Match” (versus the response body), which is helpful for debugging.
 This text file can be used for evidence of a test finding later, and can also serve as documentation for reports.</p>
