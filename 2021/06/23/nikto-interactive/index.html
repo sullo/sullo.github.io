@@ -100,10 +100,14 @@
 <p>These save files contain basic test information such as the test ID and message, the full HTTP response, and JSON representations of both the request and response. They also contain a “Reason” for the finding—for example “Response Code Match” (the code from the HTTP response matched the test database) or “Content Match” (versus the response body), which is helpful for debugging.
 This text file can be used for evidence of a test finding later, and can also serve as documentation for reports.</p>
 
-<p>Additionally, the JSON can be used to replay the original test’s request by using the included replay.pl program (note that Nikto will need the JSON::PP module installed).
+<p><img src="/public/images/blog-nikto-json.png" alt="JSON object" /></p>
+
+<p>Additionally, the JSON can be used to replay the original test’s request by using the included replay.pl program (note that Nikto will need the <a href="http://search.cpan.org/~makamaka/JSON-PP-2.27203/lib/JSON/PP.pm">JSON::PP</a> module installed).
 replay.pl has only two options:      -file      -proxy</p>
 
-<p>By supplying the Nikto save file as the -file option value, replay.pl will parse the request and send it to the original target server. The -proxy option will route the request through the specified proxy (format host:port), which makes it easy to move a request from the command line to a tool like Burp.</p>
+<p>By supplying the Nikto save file as the -file option value, replay.pl will parse the request and send it to the original target server. The -proxy option will route the request through the specified proxy (format host:port), which makes it easy to move a request from the command line to a tool like <a href="https://portswigger.net/">Burp</a>.</p>
+
+<p><img src="/public/images/blog-nikto-replay.png" alt="replay.pl" /></p>
 
 <p>This type of replay is especially handy when rechecking findings after application changes have been implemented. The output will again provide the original Nikto test information, and will show both the headers and body of the new request.</p>
 

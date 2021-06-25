@@ -4,7 +4,7 @@
  <title>CIRT.net: The Blog</title>
  <link href="https://sullo.github.io//atom.xml" rel="self"/>
  <link href="https://sullo.github.io//"/>
- <updated>2021-06-25T11:22:57-04:00</updated>
+ <updated>2021-06-25T11:27:06-04:00</updated>
  <id>https://sullo.github.io/</id>
  <author>
    <name>Chris Sullo</name>
@@ -24,10 +24,14 @@
 &lt;p&gt;These save files contain basic test information such as the test ID and message, the full HTTP response, and JSON representations of both the request and response. They also contain a “Reason” for the finding—for example “Response Code Match” (the code from the HTTP response matched the test database) or “Content Match” (versus the response body), which is helpful for debugging.
 This text file can be used for evidence of a test finding later, and can also serve as documentation for reports.&lt;/p&gt;
 
-&lt;p&gt;Additionally, the JSON can be used to replay the original test’s request by using the included replay.pl program (note that Nikto will need the JSON::PP module installed).
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-json.png&quot; alt=&quot;JSON object&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, the JSON can be used to replay the original test’s request by using the included replay.pl program (note that Nikto will need the &lt;a href=&quot;http://search.cpan.org/~makamaka/JSON-PP-2.27203/lib/JSON/PP.pm&quot;&gt;JSON::PP&lt;/a&gt; module installed).
 replay.pl has only two options:      -file      -proxy&lt;/p&gt;
 
-&lt;p&gt;By supplying the Nikto save file as the -file option value, replay.pl will parse the request and send it to the original target server. The -proxy option will route the request through the specified proxy (format host:port), which makes it easy to move a request from the command line to a tool like Burp.&lt;/p&gt;
+&lt;p&gt;By supplying the Nikto save file as the -file option value, replay.pl will parse the request and send it to the original target server. The -proxy option will route the request through the specified proxy (format host:port), which makes it easy to move a request from the command line to a tool like &lt;a href=&quot;https://portswigger.net/&quot;&gt;Burp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-replay.png&quot; alt=&quot;replay.pl&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This type of replay is especially handy when rechecking findings after application changes have been implemented. The output will again provide the original Nikto test information, and will show both the headers and body of the new request.&lt;/p&gt;
 
