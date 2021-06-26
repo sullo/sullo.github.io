@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>CIRT.net: The Blog</title>
- <link href="https://sullo.github.io//atom.xml" rel="self"/>
- <link href="https://sullo.github.io//"/>
- <updated>2021-06-26T09:18:08-04:00</updated>
- <id>https://sullo.github.io/</id>
+ <link href="https://sullo.github.io/atom.xml" rel="self"/>
+ <link href="https://sullo.github.io/"/>
+ <updated>2021-06-26T09:18:41-04:00</updated>
+ <id>https://sullo.github.io</id>
  <author>
    <name>Chris Sullo</name>
    <email>sullo@cirt.net</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Nikto Interactive</title>
-   <link href="https://sullo.github.io//2021/06/26/nikto-interactive/"/>
+   <link href="https://sullo.github.io/2021/06/26/nikto-interactive/"/>
    <updated>2021-06-26T00:00:00-04:00</updated>
-   <id>https://sullo.github.io//2021/06/26/nikto-interactive</id>
+   <id>https://sullo.github.io/2021/06/26/nikto-interactive</id>
    <content type="html">&lt;p&gt;So you have Nikto going, but you’re not really sure what’s happening, or how long the scan is going to take?&lt;/p&gt;
 
 &lt;p&gt;No problem.&lt;/p&gt;
@@ -64,9 +64,9 @@
  
  <entry>
    <title>Replay Nikto Findings With The Save Option</title>
-   <link href="https://sullo.github.io//2021/06/23/nikto-replay-requests/"/>
+   <link href="https://sullo.github.io/2021/06/23/nikto-replay-requests/"/>
    <updated>2021-06-23T00:00:00-04:00</updated>
-   <id>https://sullo.github.io//2021/06/23/nikto-replay-requests</id>
+   <id>https://sullo.github.io/2021/06/23/nikto-replay-requests</id>
    <content type="html">&lt;p&gt;When running Nikto, you have the ability to save all findings in plaintext files by using the -Save option. This option takes one argument, a directory name, which will be used or created to save all findings, one per text file.  Each file will be named in the following format: HOSTNAME_PORT_DATE_TESTID.txt&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-savedir.png&quot; alt=&quot;Savedir feature&quot; /&gt;&lt;/p&gt;
