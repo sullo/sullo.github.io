@@ -4,7 +4,7 @@
  <title>CIRT.net: The Blog</title>
  <link href="https://sullo.github.io//atom.xml" rel="self"/>
  <link href="https://sullo.github.io//"/>
- <updated>2021-06-26T09:08:13-04:00</updated>
+ <updated>2021-06-26T09:09:56-04:00</updated>
  <id>https://sullo.github.io/</id>
  <author>
    <name>Chris Sullo</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Nikto Interactive</title>
-   <link href="https://sullo.github.io//2021/06/23/nikto-interactive/"/>
+   <title>Replay Nikto Requests</title>
+   <link href="https://sullo.github.io//2021/06/23/nikto-replay-requests/"/>
    <updated>2021-06-23T00:00:00-04:00</updated>
-   <id>https://sullo.github.io//2021/06/23/nikto-interactive</id>
+   <id>https://sullo.github.io//2021/06/23/nikto-replay-requests</id>
    <content type="html">&lt;p&gt;When running Nikto, you have the ability to save all findings in plaintext files by using the -Save option. This option takes one argument, a directory name, which will be used or created to save all findings, one per text file.  Each file will be named in the following format: HOSTNAME_PORT_DATE_TESTID.txt&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-savedir.png&quot; alt=&quot;Savedir feature&quot; /&gt;&lt;/p&gt;
