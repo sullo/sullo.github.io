@@ -4,7 +4,7 @@
  <title>CIRT.net: The Blog</title>
  <link href="https://sullo.github.io//atom.xml" rel="self"/>
  <link href="https://sullo.github.io//"/>
- <updated>2021-06-26T09:09:56-04:00</updated>
+ <updated>2021-06-26T09:18:08-04:00</updated>
  <id>https://sullo.github.io/</id>
  <author>
    <name>Chris Sullo</name>
@@ -13,7 +13,57 @@
 
  
  <entry>
-   <title>Replay Nikto Requests</title>
+   <title>Nikto Interactive</title>
+   <link href="https://sullo.github.io//2021/06/26/nikto-interactive/"/>
+   <updated>2021-06-26T00:00:00-04:00</updated>
+   <id>https://sullo.github.io//2021/06/26/nikto-interactive</id>
+   <content type="html">&lt;p&gt;So you have Nikto going, but you’re not really sure what’s happening, or how long the scan is going to take?&lt;/p&gt;
+
+&lt;p&gt;No problem.&lt;/p&gt;
+
+&lt;p&gt;Nikto has several interactive features you can use while a scan is in progress. If you just want to find out the current status, simply press the space bar to find out what the program is doing, how many requests have been made, and a guesstimate of how long the rest is going to take. You can automate this output every 500 requests by turning on progress reporting by pressing ‘p’ (similarly, pressing it again will turn it off).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-status.png&quot; alt=&quot;Status&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to get a better feel for how the server is responding to each request, you can turn verbose mode on or off by pressing the ‘v’ key.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-verbose.png&quot; alt=&quot;Savedir feature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’d like a lot of info, debug is also available by pressing ‘d’.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-debug.png&quot; alt=&quot;Savedir feature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re running up against the end of your testing window, no need to cancel and start again later—simply press a ‘P’ to pause all operations. Nikto will sit around and wait until you’re ready to resume by hitting a ‘P’ again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/blog-nikto-pause.png&quot; alt=&quot;Savedir feature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re giving up or totally out of time, you can press ’N’ to move on to the next host/port (if you ran more than one, or finish up if not) or ‘q’ to quit scanning entirely. Both N/q will wrap up current operations and write report/save output, terminating the program normally and more gracefully than a hard exit will.&lt;/p&gt;
+
+&lt;p&gt;There are a few more interactive commands which you may find handy for debugging or getting more info from a server, such as reporting cookies, errors, redirections, etc. See the entire list below.&lt;/p&gt;
+
+&lt;p&gt;One last note: keyboard input is checked every 10 requests, so on very slow scans you might need to wait until input is polled.&lt;/p&gt;
+
+&lt;p&gt;Here’s the full list:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;SPACE - Report current scan status&lt;/li&gt;
+  &lt;li&gt;v - Turn verbose mode on/off&lt;/li&gt;
+  &lt;li&gt;d - Turn debug mode on/off&lt;/li&gt;
+  &lt;li&gt;e - Turn error reporting on/off&lt;/li&gt;
+  &lt;li&gt;p - Turn progress reporting on/off&lt;/li&gt;
+  &lt;li&gt;r - Turn redirect display on/off&lt;/li&gt;
+  &lt;li&gt;c - Turn cookie display on/off&lt;/li&gt;
+  &lt;li&gt;o - Turn OK display on/off&lt;/li&gt;
+  &lt;li&gt;a - Turn auth display on/off&lt;/li&gt;
+  &lt;li&gt;q - Quit&lt;/li&gt;
+  &lt;li&gt;N - Next host&lt;/li&gt;
+  &lt;li&gt;P - Pause&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Replay Nikto Findings With The Save Option</title>
    <link href="https://sullo.github.io//2021/06/23/nikto-replay-requests/"/>
    <updated>2021-06-23T00:00:00-04:00</updated>
    <id>https://sullo.github.io//2021/06/23/nikto-replay-requests</id>
